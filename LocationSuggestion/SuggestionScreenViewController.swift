@@ -41,6 +41,12 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
         super.viewDidDisappear(animated)
     }
     
+    @IBAction func viewActivities(sender: AnyObject) {
+        var mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        var viewController : UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("activitiesScreen") as UIViewController
+        self.presentViewController(viewController, animated: true, completion: nil)
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -71,7 +77,7 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
             cell.cityImageView.image = UIImage(named: cities[indexPath.row])
             cell.selectionStyle = UITableViewCellSelectionStyle.None
             APIIntegration().HTTPGetJSON("http://partners.api.skyscanner.net/apiservices/hotels/autosuggest/v2/SG/SGD/en-GB/\(cities[indexPath.row])?apikey=ah455060782609507443529395970981", callback: handleGETJSON)
-            NSThread.sleepForTimeInterval(0.3)
+            NSThread.sleepForTimeInterval(0.4)
             cell.setUpCell(prices[indexPath.row], suggestedHotel: suggestedHotel)
             return cell
         }
@@ -113,5 +119,15 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
             }
         }
     }
+    
+    /*private func findHotel(cityName: String) -> String{
+        switch cityName{
+        case "BARCELONA": return "Europark"
+        case "DUBAI": return "Delmon"
+        case "LONDON": return "Enterprise"
+        case "LYON": return "Alexandra"
+        default: return ""
+        }
+    }*/
     
 }
