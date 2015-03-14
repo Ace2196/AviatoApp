@@ -17,8 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aviato" translatesAutoresizingMaskIntoConstraints="NO" id="2Vv-lS-vbB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOb-RY-7EP" customClass="FBLoginView">
-                                <rect key="frame" x="16" y="657" width="382" height="59"/>
+                                <rect key="frame" x="32" y="652" width="350" height="59"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -164,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="1115" y="-184"/>
         </scene>
-        <!--View Controller-->
+        <!--Splash View Controller-->
         <scene sceneID="ZD1-m0-5gd">
             <objects>
-                <viewController id="dGh-81-DDj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="splashScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dGh-81-DDj" customClass="SplashViewController" customModule="LocationSuggestion" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GIZ-dG-eGF"/>
                         <viewControllerLayoutGuide type="bottom" id="T3m-4X-ucx"/>
@@ -175,9 +178,22 @@
                     <view key="view" contentMode="scaleToFill" id="eNd-pI-kGP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RJP-5I-z0X">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="0.80392156862745101" green="0.0" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loading_00000" translatesAutoresizingMaskIntoConstraints="NO" id="bsg-gP-S5Z">
+                                <rect key="frame" x="57" y="218" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.79607843137254897" green="0.0" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="splashImage" destination="bsg-gP-S5Z" id="sY8-Uu-b5J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCp-Aa-GWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,9 +277,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="aviato" width="414" height="736"/>
         <image name="button" width="370" height="42"/>
         <image name="cardBack" width="414" height="166"/>
         <image name="grey" width="414" height="166"/>
+        <image name="loading_00000" width="300" height="300"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

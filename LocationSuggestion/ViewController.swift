@@ -43,14 +43,12 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         var userEmail = user.objectForKey("email") as String
         println("User Email: \(userEmail)")*/
         var tokenData = FBSession.activeSession().accessTokenData
-        fbLoginView.userInteractionEnabled = false
-        fbLoginView.hidden = true
         println(tokenData)
         
-        //APIIntegration.post(["token":"\(tokenData)"], url: "https://aviato-emirates.herokuapp.com")
+        APIIntegration.post(["token":"\(tokenData)"], url: "https://aviato-emirates.herokuapp.com")
         
         var mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-        var viewController : UITabBarController = mainStoryBoard.instantiateViewControllerWithIdentifier("TabController") as UITabBarController
+        var viewController : UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("splashScreen") as UIViewController
         self.presentViewController(viewController, animated: true, completion: nil)
     }
     
