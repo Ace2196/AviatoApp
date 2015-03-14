@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FB759F51-6BB7-42EB-9AF2-ECBF289646DD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LocationSuggestion</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E8BDA57AABB673512BE3C312FDE2672CE656EF1F</key>
+		<string>https://github.com/Ace2196/AviatoApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LocationSuggestion.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E8BDA57AABB673512BE3C312FDE2672CE656EF1F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Ace2196/AviatoApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E8BDA57AABB673512BE3C312FDE2672CE656EF1F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E8BDA57AABB673512BE3C312FDE2672CE656EF1F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LocationSuggestion</string>
+		</dict>
+	</array>
+</dict>
+</plist>
