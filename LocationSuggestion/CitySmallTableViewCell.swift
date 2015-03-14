@@ -22,6 +22,7 @@ class CitySmallTableViewCell: UITableViewCell{
         cityImageView.layer.shadowOpacity = 0.4;
         cityImageView.layer.shadowRadius = 1.0;
         cityImageView.clipsToBounds = false;
+        
         cityNameLabel.layer.shadowColor = UIColor.blackColor().CGColor
         cityNameLabel.layer.shadowOffset = CGSizeMake(0, 0);
         cityNameLabel.layer.shadowOpacity = 1.0;

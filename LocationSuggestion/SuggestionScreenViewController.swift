@@ -53,12 +53,14 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
             cell.cityNameLabel.text = cities[indexPath.row]
             cell.addShadows()
             cell.cityImageView.image = UIImage(named: cities[indexPath.row])
+            cell.selectionStyle = UITableViewCellSelectionStyle.None
             return cell
         } else{
             var cell = tableView.dequeueReusableCellWithIdentifier("expandedCityCell", forIndexPath: indexPath) as CityLargeTableViewCell
             cell.cityNameLabel.text = cities[indexPath.row]
             cell.addShadows()
             cell.cityImageView.image = UIImage(named: cities[indexPath.row])
+            cell.selectionStyle = UITableViewCellSelectionStyle.None
             return cell
         }
     }
@@ -72,32 +74,12 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
         tableView.reloadData()
     }
     
-    func tableView(tableView: UITableView, willDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        selectedCityRow = -1
-        tableView.reloadData()
-    }
-    
-    /*func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var cell = tableView.cellForRowAtIndexPath(indexPath) as UITableViewCell?
-        
-        let dirs = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true) as? [String]
-        var cnt = dirs!.count
-        if(cnt > 0){
-            let dir = dirs![0]; //documents directory
-            let path = dir.stringByAppendingPathComponent("\(fileList[indexPath.row])\(saveFileSuffix)");
-            var read = String(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil)
-            var arrayRep = read?.componentsSeparatedByString(", ")
-            parent.updateWithDataFromArray(arrayRep!)
-            dismissViewControllerAnimated(true, completion: nil)
-        }
-        
-        
-    }*/
-    
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
 
-    
+    private func getFlight(country: String){
+        
+    }
     
 }
