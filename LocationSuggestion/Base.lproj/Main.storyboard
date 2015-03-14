@@ -31,7 +31,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="-184"/>
+            <point key="canvasLocation" x="-467" y="-184"/>
         </scene>
         <!--Suggestion Screen View Controller-->
         <scene sceneID="Efq-fH-LuI">
@@ -82,13 +82,13 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Hu-Iy-Sln" id="wKR-6n-CBz">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardBack" translatesAutoresizingMaskIntoConstraints="NO" id="MVb-0x-AFU">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBack" translatesAutoresizingMaskIntoConstraints="NO" id="MVb-0x-AFU">
                                                     <rect key="frame" x="16" y="8" width="383" height="482"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWu-6V-dM7">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SWu-6V-dM7">
                                                     <rect key="frame" x="16" y="8" width="383" height="150"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTl-p7-5Dv">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTl-p7-5Dv">
                                                     <rect key="frame" x="0.0" y="27" width="414" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -96,9 +96,45 @@
                                                     <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <size key="shadowOffset" width="0.0" height="0.0"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardBack" translatesAutoresizingMaskIntoConstraints="NO" id="bDv-4W-ibX">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBack" translatesAutoresizingMaskIntoConstraints="NO" id="bDv-4W-ibX">
                                                     <rect key="frame" x="16" y="74" width="383" height="416"/>
                                                 </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KO2-VH-27n" customClass="BEMSimpleLineGraphView">
+                                                    <rect key="frame" x="22" y="250" width="370" height="184"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="enableYAxisLabel" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="enableXAxisLabel" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="sizePoint">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="colorXaxisLabel">
+                                                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="colorYaxisLabel">
+                                                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="colorLine">
+                                                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="colorBottom">
+                                                            <color key="value" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="widthLine">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="colorTop">
+                                                            <color key="value" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeR-Tf-3fE">
+                                                    <rect key="frame" x="22" y="442" width="370" height="42"/>
+                                                    <state key="normal" title="Buy Now" backgroundImage="button">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -106,6 +142,7 @@
                                             <outlet property="cardBackImageView" destination="bDv-4W-ibX" id="qwh-ha-1jl"/>
                                             <outlet property="cityImageView" destination="SWu-6V-dM7" id="cnX-73-Nlf"/>
                                             <outlet property="cityNameLabel" destination="pTl-p7-5Dv" id="1hW-IK-S5O"/>
+                                            <outlet property="graphView" destination="KO2-VH-27n" id="0jg-ao-TiJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -127,6 +164,25 @@
             </objects>
             <point key="canvasLocation" x="1115" y="-184"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ZD1-m0-5gd">
+            <objects>
+                <viewController id="dGh-81-DDj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GIZ-dG-eGF"/>
+                        <viewControllerLayoutGuide type="bottom" id="T3m-4X-ucx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eNd-pI-kGP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tCp-Aa-GWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="-184"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7P9-Us-Wfa">
             <objects>
@@ -134,10 +190,8 @@
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="KeB-PY-yFr">
+                    <tabBar key="tabBar" userInteractionEnabled="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" id="KeB-PY-yFr">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="kb8-F8-VVQ" kind="relationship" relationship="viewControllers" id="csT-oj-5IE"/>
@@ -149,10 +203,10 @@
             </objects>
             <point key="canvasLocation" x="536" y="-184"/>
         </scene>
-        <!--View Controller-->
+        <!--History View Controller-->
         <scene sceneID="JJm-TO-uzm">
             <objects>
-                <viewController id="peN-Mt-nhI" sceneMemberID="viewController">
+                <viewController id="peN-Mt-nhI" customClass="HistoryViewController" customModule="LocationSuggestion" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QR1-yP-P3L"/>
                         <viewControllerLayoutGuide type="bottom" id="4eM-CU-6Np"/>
@@ -175,10 +229,10 @@
             </objects>
             <point key="canvasLocation" x="536" y="731"/>
         </scene>
-        <!--View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="Zp5-c5-Yu2">
             <objects>
-                <viewController id="vbg-SE-iQJ" sceneMemberID="viewController">
+                <viewController id="vbg-SE-iQJ" customClass="SearchViewController" customModule="LocationSuggestion" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Iir-rC-DRl"/>
                         <viewControllerLayoutGuide type="bottom" id="nqC-Vg-Zhj"/>
@@ -191,6 +245,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="415" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <searchBar contentMode="redraw" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="NWm-62-G9d">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -203,6 +261,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button" width="370" height="42"/>
         <image name="cardBack" width="414" height="166"/>
         <image name="grey" width="414" height="166"/>
     </resources>

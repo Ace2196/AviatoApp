@@ -45,7 +45,7 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         var tokenData = FBSession.activeSession().accessTokenData
         fbLoginView.userInteractionEnabled = false
         fbLoginView.hidden = true
-        //println(tokenData)
+        println(tokenData)
         
         //APIIntegration.post(["token":"\(tokenData)"], url: "https://aviato-emirates.herokuapp.com")
         

@@ -12,8 +12,16 @@ import UIKit
 class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var suggestionTable: UITableView!
-    private var cities = ["SINGAPORE", "DUBAI", "LONDON", "THAILAND"]
+    private var cities = ["BARCELONA", "DUBAI", "LONDON", "NEW YORK"]
     private var selectedCityRow = -1
+    private var barcelonaPrices : [CGFloat] = [1284, 1284, 1172, 1172, 1172, 1172, 1172, 1172, 1172]
+    private var dubaiPrices : [CGFloat] = [1095, 1095, 1020, 1020, 1020, 1020, 1020, 1020, 1020]
+    private var londonPrices : [CGFloat] = [1148, 1148, 1035, 1035, 1035, 1035, 1035, 1035, 1035]
+    
+    private var prices : [[CGFloat]] = [[1284, 1284, 1172, 1172, 1172, 1172, 1172, 1172, 1172],
+                           [1095, 1095, 1020, 1020, 1020, 1020, 1020, 1020, 1020],
+                           [1148, 1148, 1035, 1035, 1035, 1035, 1035, 1035, 1035],
+                            [1826, 1826, 1714, 1714, 1714, 1714, 1714, 1714, 1714]]
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -58,9 +66,9 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
         } else{
             var cell = tableView.dequeueReusableCellWithIdentifier("expandedCityCell", forIndexPath: indexPath) as CityLargeTableViewCell
             cell.cityNameLabel.text = cities[indexPath.row]
-            cell.addShadows()
             cell.cityImageView.image = UIImage(named: cities[indexPath.row])
             cell.selectionStyle = UITableViewCellSelectionStyle.None
+            cell.setUpCell(prices[indexPath.row])
             return cell
         }
     }

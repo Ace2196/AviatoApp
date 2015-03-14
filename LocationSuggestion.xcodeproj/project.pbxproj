@@ -17,6 +17,20 @@
 		5A93B20F1AB40BD700CA39DF /* CityLargeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B20D1AB40BD700CA39DF /* CityLargeTableViewCell.swift */; };
 		5A93B2111AB4397700CA39DF /* APIIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B2101AB4397700CA39DF /* APIIntegration.swift */; };
 		5A93B2121AB43A2200CA39DF /* APIIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B2101AB4397700CA39DF /* APIIntegration.swift */; };
+		5A93B2301AB4488200CA39DF /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B2291AB4488200CA39DF /* BEMCircle.m */; };
+		5A93B2311AB4488200CA39DF /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B2291AB4488200CA39DF /* BEMCircle.m */; };
+		5A93B2321AB4488200CA39DF /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B22B1AB4488200CA39DF /* BEMLine.m */; };
+		5A93B2331AB4488200CA39DF /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B22B1AB4488200CA39DF /* BEMLine.m */; };
+		5A93B2341AB4488200CA39DF /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B22D1AB4488200CA39DF /* BEMPermanentPopupView.m */; };
+		5A93B2351AB4488200CA39DF /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B22D1AB4488200CA39DF /* BEMPermanentPopupView.m */; };
+		5A93B2361AB4488200CA39DF /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B22F1AB4488200CA39DF /* BEMSimpleLineGraphView.m */; };
+		5A93B2371AB4488200CA39DF /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B22F1AB4488200CA39DF /* BEMSimpleLineGraphView.m */; };
+		5A93B23B1AB46ED000CA39DF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B23A1AB46ED000CA39DF /* SearchViewController.swift */; };
+		5A93B23C1AB46ED000CA39DF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B23A1AB46ED000CA39DF /* SearchViewController.swift */; };
+		5A93B23E1AB4707F00CA39DF /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B23D1AB4707F00CA39DF /* HistoryViewController.swift */; };
+		5A93B23F1AB4707F00CA39DF /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B23D1AB4707F00CA39DF /* HistoryViewController.swift */; };
+		5A93B2411AB473AE00CA39DF /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B2401AB473AE00CA39DF /* SplashViewController.swift */; };
+		5A93B2421AB473AE00CA39DF /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B2401AB473AE00CA39DF /* SplashViewController.swift */; };
 		5A9E94DD1AB343AF007D53BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9E94DC1AB343AF007D53BF /* AppDelegate.swift */; };
 		5A9E94DF1AB343AF007D53BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9E94DE1AB343AF007D53BF /* ViewController.swift */; };
 		5A9E94E21AB343AF007D53BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9E94E01AB343AF007D53BF /* Main.storyboard */; };
@@ -43,6 +57,18 @@
 		5A93B20A1AB3FDD400CA39DF /* GlowingUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlowingUILabel.swift; sourceTree = "<group>"; };
 		5A93B20D1AB40BD700CA39DF /* CityLargeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityLargeTableViewCell.swift; sourceTree = "<group>"; };
 		5A93B2101AB4397700CA39DF /* APIIntegration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIIntegration.swift; sourceTree = "<group>"; };
+		5A93B2271AB4488200CA39DF /* LocationSuggestionTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationSuggestionTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A93B2281AB4488200CA39DF /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCircle.h; sourceTree = "<group>"; };
+		5A93B2291AB4488200CA39DF /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCircle.m; sourceTree = "<group>"; };
+		5A93B22A1AB4488200CA39DF /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMLine.h; sourceTree = "<group>"; };
+		5A93B22B1AB4488200CA39DF /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMLine.m; sourceTree = "<group>"; };
+		5A93B22C1AB4488200CA39DF /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPermanentPopupView.h; sourceTree = "<group>"; };
+		5A93B22D1AB4488200CA39DF /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPermanentPopupView.m; sourceTree = "<group>"; };
+		5A93B22E1AB4488200CA39DF /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
+		5A93B22F1AB4488200CA39DF /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
+		5A93B23A1AB46ED000CA39DF /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5A93B23D1AB4707F00CA39DF /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		5A93B2401AB473AE00CA39DF /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		5A9E94D71AB343AF007D53BF /* LocationSuggestion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationSuggestion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9E94DB1AB343AF007D53BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A9E94DC1AB343AF007D53BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +103,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A93B2261AB4484C00CA39DF /* BEMSimpleLineGraph */ = {
+			isa = PBXGroup;
+			children = (
+				5A93B2281AB4488200CA39DF /* BEMCircle.h */,
+				5A93B2291AB4488200CA39DF /* BEMCircle.m */,
+				5A93B22A1AB4488200CA39DF /* BEMLine.h */,
+				5A93B22B1AB4488200CA39DF /* BEMLine.m */,
+				5A93B22C1AB4488200CA39DF /* BEMPermanentPopupView.h */,
+				5A93B22D1AB4488200CA39DF /* BEMPermanentPopupView.m */,
+				5A93B22E1AB4488200CA39DF /* BEMSimpleLineGraphView.h */,
+				5A93B22F1AB4488200CA39DF /* BEMSimpleLineGraphView.m */,
+				5A93B2271AB4488200CA39DF /* LocationSuggestionTests-Bridging-Header.h */,
+			);
+			name = BEMSimpleLineGraph;
+			sourceTree = "<group>";
+		};
 		5A9E94CE1AB343AF007D53BF = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +140,7 @@
 		5A9E94D91AB343AF007D53BF /* LocationSuggestion */ = {
 			isa = PBXGroup;
 			children = (
+				5A93B2261AB4484C00CA39DF /* BEMSimpleLineGraph */,
 				5A9E94DC1AB343AF007D53BF /* AppDelegate.swift */,
 				5A9E94DE1AB343AF007D53BF /* ViewController.swift */,
 				5A9E94E01AB343AF007D53BF /* Main.storyboard */,
@@ -111,6 +154,9 @@
 				5A93B20A1AB3FDD400CA39DF /* GlowingUILabel.swift */,
 				5A93B20D1AB40BD700CA39DF /* CityLargeTableViewCell.swift */,
 				5A93B2101AB4397700CA39DF /* APIIntegration.swift */,
+				5A93B23A1AB46ED000CA39DF /* SearchViewController.swift */,
+				5A93B23D1AB4707F00CA39DF /* HistoryViewController.swift */,
+				5A93B2401AB473AE00CA39DF /* SplashViewController.swift */,
 			);
 			path = LocationSuggestion;
 			sourceTree = "<group>";
@@ -250,10 +296,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A93B2361AB4488200CA39DF /* BEMSimpleLineGraphView.m in Sources */,
 				5A93B2111AB4397700CA39DF /* APIIntegration.swift in Sources */,
 				5A93B2081AB3EA4C00CA39DF /* CitySmallTableViewCell.swift in Sources */,
 				5A9E94DF1AB343AF007D53BF /* ViewController.swift in Sources */,
+				5A93B23E1AB4707F00CA39DF /* HistoryViewController.swift in Sources */,
+				5A93B2411AB473AE00CA39DF /* SplashViewController.swift in Sources */,
+				5A93B2341AB4488200CA39DF /* BEMPermanentPopupView.m in Sources */,
 				5A93B20E1AB40BD700CA39DF /* CityLargeTableViewCell.swift in Sources */,
+				5A93B23B1AB46ED000CA39DF /* SearchViewController.swift in Sources */,
+				5A93B2301AB4488200CA39DF /* BEMCircle.m in Sources */,
+				5A93B2321AB4488200CA39DF /* BEMLine.m in Sources */,
 				5A93B2051AB3DFEF00CA39DF /* SuggestionScreenViewController.swift in Sources */,
 				5A93B20B1AB3FDD400CA39DF /* GlowingUILabel.swift in Sources */,
 				5A9E94DD1AB343AF007D53BF /* AppDelegate.swift in Sources */,
@@ -264,7 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A93B2331AB4488200CA39DF /* BEMLine.m in Sources */,
+				5A93B23C1AB46ED000CA39DF /* SearchViewController.swift in Sources */,
 				5A93B20C1AB3FDD400CA39DF /* GlowingUILabel.swift in Sources */,
+				5A93B23F1AB4707F00CA39DF /* HistoryViewController.swift in Sources */,
+				5A93B2371AB4488200CA39DF /* BEMSimpleLineGraphView.m in Sources */,
+				5A93B2311AB4488200CA39DF /* BEMCircle.m in Sources */,
+				5A93B2421AB473AE00CA39DF /* SplashViewController.swift in Sources */,
+				5A93B2351AB4488200CA39DF /* BEMPermanentPopupView.m in Sources */,
 				5A93B20F1AB40BD700CA39DF /* CityLargeTableViewCell.swift in Sources */,
 				5A93B2091AB3EA4C00CA39DF /* CitySmallTableViewCell.swift in Sources */,
 				5A93B2061AB3DFEF00CA39DF /* SuggestionScreenViewController.swift in Sources */,
@@ -422,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -434,6 +495,8 @@
 				INFOPLIST_FILE = LocationSuggestionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocationSuggestion/LocationSuggestionTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationSuggestion.app/LocationSuggestion";
 			};
 			name = Debug;
@@ -442,6 +505,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -450,6 +514,7 @@
 				INFOPLIST_FILE = LocationSuggestionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocationSuggestion/LocationSuggestionTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationSuggestion.app/LocationSuggestion";
 			};
 			name = Release;
