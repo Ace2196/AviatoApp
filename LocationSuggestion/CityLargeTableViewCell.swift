@@ -19,14 +19,16 @@ class CityLargeTableViewCell: UITableViewCell, BEMSimpleLineGraphDataSource, BEM
     @IBOutlet weak var borderShadowImageView: UIImageView!
     
     @IBOutlet weak var graphView: BEMSimpleLineGraphView!
+    @IBOutlet weak var hotelNameLabel: UILabel!
     
     var data: [CGFloat]!
     
-    func setUpCell(prices: [CGFloat]){
+    func setUpCell(prices: [CGFloat], suggestedHotel: String){
         self.graphView.delegate = self
         self.graphView.dataSource = self
         self.graphView.enablePopUpReport = true
         self.graphView.enableBezierCurve = true
+        hotelNameLabel.text = suggestedHotel
         addShadows()
         data = prices
         self.graphView.reloadGraph()

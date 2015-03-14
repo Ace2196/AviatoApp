@@ -12,7 +12,7 @@ import UIKit
 class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var suggestionTable: UITableView!
-    private var cities = ["BARCELONA", "DUBAI", "LONDON", "NEW YORK"]
+    private var cities = ["BARCELONA", "DUBAI", "LONDON", "LYON"]
     private var selectedCityRow = -1
     private var barcelonaPrices : [CGFloat] = [1284, 1284, 1172, 1172, 1172, 1172, 1172, 1172, 1172]
     private var dubaiPrices : [CGFloat] = [1095, 1095, 1020, 1020, 1020, 1020, 1020, 1020, 1020]
@@ -21,7 +21,9 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
     private var prices : [[CGFloat]] = [[1284, 1284, 1172, 1172, 1172, 1172, 1172, 1172, 1172],
                            [1095, 1095, 1020, 1020, 1020, 1020, 1020, 1020, 1020],
                            [1148, 1148, 1035, 1035, 1035, 1035, 1035, 1035, 1035],
-                            [1826, 1826, 1714, 1714, 1714, 1714, 1714, 1714, 1714]]
+                            [1359, 1359, 1361, 1247, 1249, 1247, 1247, 1247, 1247]]
+    
+    private var suggestedHotel: String!
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -31,7 +33,7 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
         super.viewDidLoad()
         suggestionTable.delegate = self
         suggestionTable.dataSource = self
-        
+        suggestedHotel = ""
         setNeedsStatusBarAppearanceUpdate()
     }
     
@@ -68,7 +70,9 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
             cell.cityNameLabel.text = cities[indexPath.row]
             cell.cityImageView.image = UIImage(named: cities[indexPath.row])
             cell.selectionStyle = UITableViewCellSelectionStyle.None
-            cell.setUpCell(prices[indexPath.row])
+            APIIntegration().HTTPGetJSON("http://partners.api.skyscanner.net/apiservices/hotels/autosuggest/v2/SG/SGD/en-GB/\(cities[indexPath.row])?apikey=ah455060782609507443529395970981", callback: handleGETJSON)
+            NSThread.sleepForTimeInterval(0.3)
+            cell.setUpCell(prices[indexPath.row], suggestedHotel: suggestedHotel)
             return cell
         }
     }
@@ -88,6 +92,26 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
 
     private func getFlight(country: String){
         
+    }
+    
+    func handleGET(result:String, err:String?) -> Void{
+        println(result)
+    }
+    
+    func handleGETJSON(result:Dictionary<String, AnyObject>, err:String?) -> Void{
+        //println(result)
+        findHotel(result)
+    }
+    
+    private func findHotel(data: Dictionary<String, AnyObject>) -> Void{
+        var results = data["results"] as [AnyObject]
+        for(var i = 0 ; i < results.count ; i++){
+            var geo_type = results[i]["geo_type"] as String!
+            if(geo_type == "Hotel"){
+                print(results[i])
+                self.suggestedHotel = results[i]["display_name"] as String!
+            }
+        }
     }
     
 }

@@ -18,10 +18,10 @@ class SplashViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         for(var i = 0 ; i <= 9 ; i++ ){
-            splashFrames.append(UIImage(named: "loading_0000\(i)")!)
+            splashFrames.append(UIImage(named: "Comp 1_0000\(i)")!)
         }
         for(var i = 10 ; i <= 89 ; i++ ){
-            splashFrames.append(UIImage(named: "loading_000\(i)")!)
+            splashFrames.append(UIImage(named: "Comp 1_000\(i)")!)
         }
         
         setNeedsStatusBarAppearanceUpdate()
