@@ -76,8 +76,9 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
             cell.cityNameLabel.text = cities[indexPath.row]
             cell.cityImageView.image = UIImage(named: cities[indexPath.row])
             cell.selectionStyle = UITableViewCellSelectionStyle.None
-            APIIntegration().HTTPGetJSON("http://partners.api.skyscanner.net/apiservices/hotels/autosuggest/v2/SG/SGD/en-GB/\(cities[indexPath.row])?apikey=ah455060782609507443529395970981", callback: handleGETJSON)
-            NSThread.sleepForTimeInterval(0.4)
+            //APIIntegration().HTTPGetJSON("http://partners.api.skyscanner.net/apiservices/hotels/autosuggest/v2/SG/SGD/en-GB/\(cities[indexPath.row])?apikey=ah455060782609507443529395970981", callback: handleGETJSON)
+            self.suggestedHotel = self.findHotelHardCode(cities[indexPath.row])
+            //NSThread.sleepForTimeInterval(0.4)
             cell.setUpCell(prices[indexPath.row], suggestedHotel: suggestedHotel)
             return cell
         }
@@ -89,6 +90,8 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
         } else{
             selectedCityRow = indexPath.row
         }
+        //tableView.beginUpdates()
+        //tableView.endUpdates()
         tableView.reloadData()
     }
     
@@ -120,7 +123,7 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
         }
     }
     
-    /*private func findHotel(cityName: String) -> String{
+    private func findHotelHardCode(cityName: String) -> String{
         switch cityName{
         case "BARCELONA": return "Europark"
         case "DUBAI": return "Delmon"
@@ -128,6 +131,6 @@ class SuggestionScreenViewController: UIViewController, UITableViewDelegate, UIT
         case "LYON": return "Alexandra"
         default: return ""
         }
-    }*/
+    }
     
 }

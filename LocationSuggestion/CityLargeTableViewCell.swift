@@ -21,6 +21,7 @@ class CityLargeTableViewCell: UITableViewCell, BEMSimpleLineGraphDataSource, BEM
     @IBOutlet weak var graphView: BEMSimpleLineGraphView!
     @IBOutlet weak var hotelNameLabel: UILabel!
     
+    @IBOutlet weak var activitiesButton: UIButton!
     var data: [CGFloat]!
     
     func setUpCell(prices: [CGFloat], suggestedHotel: String){
@@ -29,6 +30,7 @@ class CityLargeTableViewCell: UITableViewCell, BEMSimpleLineGraphDataSource, BEM
         self.graphView.enablePopUpReport = true
         self.graphView.enableBezierCurve = true
         hotelNameLabel.text = suggestedHotel
+        activitiesButton.setTitle("Things to do in \(cityNameLabel.text!.capitalizedString)", forState: UIControlState.Normal)
         addShadows()
         data = prices
         self.graphView.reloadGraph()

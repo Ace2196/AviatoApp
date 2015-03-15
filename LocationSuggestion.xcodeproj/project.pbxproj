@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A2F23071AB4FC43009743BD /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F23061AB4FC43009743BD /* ActivitiesViewController.swift */; };
+		5A2F23081AB4FC43009743BD /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F23061AB4FC43009743BD /* ActivitiesViewController.swift */; };
+		5A2F230A1AB50242009743BD /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F23091AB50242009743BD /* ActivityTableViewCell.swift */; };
+		5A2F230B1AB50242009743BD /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2F23091AB50242009743BD /* ActivityTableViewCell.swift */; };
 		5A93B2051AB3DFEF00CA39DF /* SuggestionScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B2041AB3DFEF00CA39DF /* SuggestionScreenViewController.swift */; };
 		5A93B2061AB3DFEF00CA39DF /* SuggestionScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B2041AB3DFEF00CA39DF /* SuggestionScreenViewController.swift */; };
 		5A93B2081AB3EA4C00CA39DF /* CitySmallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93B2071AB3EA4C00CA39DF /* CitySmallTableViewCell.swift */; };
@@ -52,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A2F23061AB4FC43009743BD /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		5A2F23091AB50242009743BD /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
 		5A93B2041AB3DFEF00CA39DF /* SuggestionScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionScreenViewController.swift; sourceTree = "<group>"; };
 		5A93B2071AB3EA4C00CA39DF /* CitySmallTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitySmallTableViewCell.swift; sourceTree = "<group>"; };
 		5A93B20A1AB3FDD400CA39DF /* GlowingUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlowingUILabel.swift; sourceTree = "<group>"; };
@@ -157,6 +163,8 @@
 				5A93B23A1AB46ED000CA39DF /* SearchViewController.swift */,
 				5A93B23D1AB4707F00CA39DF /* HistoryViewController.swift */,
 				5A93B2401AB473AE00CA39DF /* SplashViewController.swift */,
+				5A2F23061AB4FC43009743BD /* ActivitiesViewController.swift */,
+				5A2F23091AB50242009743BD /* ActivityTableViewCell.swift */,
 			);
 			path = LocationSuggestion;
 			sourceTree = "<group>";
@@ -302,7 +310,9 @@
 				5A9E94DF1AB343AF007D53BF /* ViewController.swift in Sources */,
 				5A93B23E1AB4707F00CA39DF /* HistoryViewController.swift in Sources */,
 				5A93B2411AB473AE00CA39DF /* SplashViewController.swift in Sources */,
+				5A2F230A1AB50242009743BD /* ActivityTableViewCell.swift in Sources */,
 				5A93B2341AB4488200CA39DF /* BEMPermanentPopupView.m in Sources */,
+				5A2F23071AB4FC43009743BD /* ActivitiesViewController.swift in Sources */,
 				5A93B20E1AB40BD700CA39DF /* CityLargeTableViewCell.swift in Sources */,
 				5A93B23B1AB46ED000CA39DF /* SearchViewController.swift in Sources */,
 				5A93B2301AB4488200CA39DF /* BEMCircle.m in Sources */,
@@ -319,7 +329,9 @@
 			files = (
 				5A93B2331AB4488200CA39DF /* BEMLine.m in Sources */,
 				5A93B23C1AB46ED000CA39DF /* SearchViewController.swift in Sources */,
+				5A2F230B1AB50242009743BD /* ActivityTableViewCell.swift in Sources */,
 				5A93B20C1AB3FDD400CA39DF /* GlowingUILabel.swift in Sources */,
+				5A2F23081AB4FC43009743BD /* ActivitiesViewController.swift in Sources */,
 				5A93B23F1AB4707F00CA39DF /* HistoryViewController.swift in Sources */,
 				5A93B2371AB4488200CA39DF /* BEMSimpleLineGraphView.m in Sources */,
 				5A93B2311AB4488200CA39DF /* BEMCircle.m in Sources */,

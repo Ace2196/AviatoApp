@@ -188,6 +188,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="activitiesButton" destination="PNC-Zb-BCt" id="IMT-Cy-PRC"/>
                                             <outlet property="borderShadowImageView" destination="MVb-0x-AFU" id="Cae-sE-jGR"/>
                                             <outlet property="cardBackImageView" destination="bDv-4W-ibX" id="qwh-ha-1jl"/>
                                             <outlet property="cityImageView" destination="SWu-6V-dM7" id="cnX-73-Nlf"/>
@@ -218,7 +219,7 @@
         <!--View Controller-->
         <scene sceneID="bF8-Qf-lO7">
             <objects>
-                <viewController storyboardIdentifier="activitiesScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RCD-9g-3F9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="activities" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RCD-9g-3F9" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xSn-tS-ESm"/>
                         <viewControllerLayoutGuide type="bottom" id="pvW-jh-LaI"/>
@@ -234,14 +235,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gaz-DK-kVJ">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Activities" id="CQl-Ie-iDF">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="ghy-JE-u7S"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HHf-Q6-2Ya">
                                 <rect key="frame" x="16" y="204" width="382" height="388"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -257,6 +250,14 @@ Hit the beaches</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gaz-DK-kVJ">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Activities" id="CQl-Ie-iDF">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="ghy-JE-u7S"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -266,6 +267,89 @@ Hit the beaches</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSr-UK-Ne5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1605" y="-184"/>
+        </scene>
+        <!--Activities View Controller-->
+        <scene sceneID="rin-v4-adZ">
+            <objects>
+                <viewController storyboardIdentifier="activitiesScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FcP-IL-Nvb" customClass="ActivitiesViewController" customModule="LocationSuggestion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Iu-1X-dLh"/>
+                        <viewControllerLayoutGuide type="bottom" id="bo8-fa-jWK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hJ7-ty-10F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="85" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qKA-dr-bs7">
+                                <rect key="frame" x="0.0" y="143" width="414" height="593"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="activityCell" rowHeight="85" id="eKl-Ug-8AZ" customClass="ActivityTableViewCell" customModule="LocationSuggestion" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eKl-Ug-8AZ" id="xng-ta-saX">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grey" translatesAutoresizingMaskIntoConstraints="NO" id="6Ur-98-mqe">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="84.5"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardBack" translatesAutoresizingMaskIntoConstraints="NO" id="Yue-cm-Qgn">
+                                                    <rect key="frame" x="16" y="8" width="383" height="69"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KVW-32-OWe">
+                                                    <rect key="frame" x="16" y="8" width="69" height="69"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Il-nE-YXU">
+                                                    <rect key="frame" x="93" y="32" width="294" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="activityImageView" destination="KVW-32-OWe" id="6ey-jN-iBb"/>
+                                            <outlet property="activityLabel" destination="2Il-nE-YXU" id="TRr-2o-iR3"/>
+                                            <outlet property="cardBackImageView" destination="Yue-cm-Qgn" id="tPh-1a-uzh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD0-Ah-yht">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Activities" id="MDx-YF-5va">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="v8v-ML-ghB">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="backButtonPress:" destination="FcP-IL-Nvb" id="KyD-yZ-SB6"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Foa-bK-umj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="w81-4x-dJj">
+                                <rect key="frame" x="15" y="70" width="384" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Here is a personalized list of activities prepared just for you, we know you dont like any of that artsy historic stuff, but trust us - Barcelona is for you!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="activityTable" destination="qKA-dr-bs7" id="zMj-W7-UZt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CN6-AV-qJO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2163" y="-184"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="ZD1-m0-5gd">
