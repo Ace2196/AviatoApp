@@ -55,6 +55,14 @@
 		5AC168091ABD362B0047B9A5 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC168081ABD362B0047B9A5 /* PlaceTableViewCell.swift */; };
 		5AC1680A1ABD36870047B9A5 /* InterestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC168061ABD35770047B9A5 /* InterestTableViewCell.swift */; };
 		5AC1680B1ABD36890047B9A5 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC168081ABD362B0047B9A5 /* PlaceTableViewCell.swift */; };
+		5AC1680D1ABD4C990047B9A5 /* InterestsPageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1680C1ABD4C990047B9A5 /* InterestsPageCollection.swift */; };
+		5AC1680F1ABD4F080047B9A5 /* InterestCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1680E1ABD4F080047B9A5 /* InterestCollectionCell.swift */; };
+		5AC168101ABD4FF30047B9A5 /* InterestCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1680E1ABD4F080047B9A5 /* InterestCollectionCell.swift */; };
+		5AC168111ABD4FF50047B9A5 /* InterestsPageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1680C1ABD4C990047B9A5 /* InterestsPageCollection.swift */; };
+		5AC168131ABD5D8B0047B9A5 /* PlaceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC168121ABD5D8B0047B9A5 /* PlaceCollectionCell.swift */; };
+		5AC168151ABD5DDC0047B9A5 /* PlacePageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC168141ABD5DDC0047B9A5 /* PlacePageCollection.swift */; };
+		5AC168161ABD5E3F0047B9A5 /* PlaceCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC168121ABD5D8B0047B9A5 /* PlaceCollectionCell.swift */; };
+		5AC168171ABD5ECF0047B9A5 /* PlacePageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC168141ABD5DDC0047B9A5 /* PlacePageCollection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +113,10 @@
 		5AC168021ABD27180047B9A5 /* PreviousPlaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousPlaces.swift; sourceTree = "<group>"; };
 		5AC168061ABD35770047B9A5 /* InterestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestTableViewCell.swift; sourceTree = "<group>"; };
 		5AC168081ABD362B0047B9A5 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		5AC1680C1ABD4C990047B9A5 /* InterestsPageCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestsPageCollection.swift; sourceTree = "<group>"; };
+		5AC1680E1ABD4F080047B9A5 /* InterestCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestCollectionCell.swift; sourceTree = "<group>"; };
+		5AC168121ABD5D8B0047B9A5 /* PlaceCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCollectionCell.swift; sourceTree = "<group>"; };
+		5AC168141ABD5DDC0047B9A5 /* PlacePageCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacePageCollection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +201,10 @@
 				5AC168021ABD27180047B9A5 /* PreviousPlaces.swift */,
 				5AC168061ABD35770047B9A5 /* InterestTableViewCell.swift */,
 				5AC168081ABD362B0047B9A5 /* PlaceTableViewCell.swift */,
+				5AC1680C1ABD4C990047B9A5 /* InterestsPageCollection.swift */,
+				5AC1680E1ABD4F080047B9A5 /* InterestCollectionCell.swift */,
+				5AC168121ABD5D8B0047B9A5 /* PlaceCollectionCell.swift */,
+				5AC168141ABD5DDC0047B9A5 /* PlacePageCollection.swift */,
 			);
 			path = LocationSuggestion;
 			sourceTree = "<group>";
@@ -331,11 +347,13 @@
 				5A93B2361AB4488200CA39DF /* BEMSimpleLineGraphView.m in Sources */,
 				5A93B2111AB4397700CA39DF /* APIIntegration.swift in Sources */,
 				5A93B2081AB3EA4C00CA39DF /* CitySmallTableViewCell.swift in Sources */,
+				5AC1680D1ABD4C990047B9A5 /* InterestsPageCollection.swift in Sources */,
 				5A9E94DF1AB343AF007D53BF /* ViewController.swift in Sources */,
 				5A93B23E1AB4707F00CA39DF /* HistoryViewController.swift in Sources */,
 				5AC168091ABD362B0047B9A5 /* PlaceTableViewCell.swift in Sources */,
 				5AC167FD1ABD24190047B9A5 /* InstructionView.swift in Sources */,
 				5A93B2411AB473AE00CA39DF /* SplashViewController.swift in Sources */,
+				5AC168131ABD5D8B0047B9A5 /* PlaceCollectionCell.swift in Sources */,
 				5A2F230A1AB50242009743BD /* ActivityTableViewCell.swift in Sources */,
 				5AC168031ABD27180047B9A5 /* PreviousPlaces.swift in Sources */,
 				5AC168011ABD261C0047B9A5 /* InterestsPage.swift in Sources */,
@@ -344,11 +362,13 @@
 				5A93B20E1AB40BD700CA39DF /* CityLargeTableViewCell.swift in Sources */,
 				5AC167FB1ABD21470047B9A5 /* ProfilePageContentViewController.swift in Sources */,
 				5A93B23B1AB46ED000CA39DF /* SearchViewController.swift in Sources */,
+				5AC1680F1ABD4F080047B9A5 /* InterestCollectionCell.swift in Sources */,
 				5A93B2301AB4488200CA39DF /* BEMCircle.m in Sources */,
 				5AC168071ABD35770047B9A5 /* InterestTableViewCell.swift in Sources */,
 				5A93B2321AB4488200CA39DF /* BEMLine.m in Sources */,
 				5A93B2051AB3DFEF00CA39DF /* SuggestionScreenViewController.swift in Sources */,
 				5A93B20B1AB3FDD400CA39DF /* GlowingUILabel.swift in Sources */,
+				5AC168151ABD5DDC0047B9A5 /* PlacePageCollection.swift in Sources */,
 				5A9E94DD1AB343AF007D53BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,7 +380,10 @@
 				5A93B2331AB4488200CA39DF /* BEMLine.m in Sources */,
 				5A93B23C1AB46ED000CA39DF /* SearchViewController.swift in Sources */,
 				5AC168041ABD29680047B9A5 /* InterestsPage.swift in Sources */,
+				5AC168171ABD5ECF0047B9A5 /* PlacePageCollection.swift in Sources */,
+				5AC168111ABD4FF50047B9A5 /* InterestsPageCollection.swift in Sources */,
 				5A2F230B1AB50242009743BD /* ActivityTableViewCell.swift in Sources */,
+				5AC168161ABD5E3F0047B9A5 /* PlaceCollectionCell.swift in Sources */,
 				5A93B20C1AB3FDD400CA39DF /* GlowingUILabel.swift in Sources */,
 				5A2F23081AB4FC43009743BD /* ActivitiesViewController.swift in Sources */,
 				5A93B23F1AB4707F00CA39DF /* HistoryViewController.swift in Sources */,
@@ -374,6 +397,7 @@
 				5A93B2091AB3EA4C00CA39DF /* CitySmallTableViewCell.swift in Sources */,
 				5A93B2061AB3DFEF00CA39DF /* SuggestionScreenViewController.swift in Sources */,
 				5AC167FE1ABD24240047B9A5 /* InstructionView.swift in Sources */,
+				5AC168101ABD4FF30047B9A5 /* InterestCollectionCell.swift in Sources */,
 				5AC1680B1ABD36890047B9A5 /* PlaceTableViewCell.swift in Sources */,
 				5A9E94F31AB343AF007D53BF /* LocationSuggestionTests.swift in Sources */,
 				5A93B2121AB43A2200CA39DF /* APIIntegration.swift in Sources */,

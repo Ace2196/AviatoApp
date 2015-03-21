@@ -607,6 +607,132 @@ Hit the beaches</string>
             </objects>
             <point key="canvasLocation" x="1647" y="1473.5"/>
         </scene>
+        <!--Interests Page Collection-->
+        <scene sceneID="LyN-iD-xoR">
+            <objects>
+                <viewController storyboardIdentifier="InterestCollection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bzd-Ip-X7C" customClass="InterestsPageCollection" customModule="LocationSuggestion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v1Z-5o-1IT"/>
+                        <viewControllerLayoutGuide type="bottom" id="fFu-U8-wMG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9oe-hy-sGG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="453"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Hpg-jz-6W1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="453"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="3r3-eY-6IB">
+                                    <size key="itemSize" width="207" height="138"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="InterestCollectionCell" reuseIdentifier="InterestCollectionCell" id="CFu-6o-JEE" customClass="InterestCollectionCell" customModule="LocationSuggestion" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="207" height="138"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grey" translatesAutoresizingMaskIntoConstraints="NO" id="Ur8-g2-n6D">
+                                                    <rect key="frame" x="-13" y="-10" width="230" height="158"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardBack" translatesAutoresizingMaskIntoConstraints="NO" id="Rc3-wL-Ycw">
+                                                    <rect key="frame" x="8" y="8" width="191" height="122"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3F-l0-mE4">
+                                                    <rect key="frame" x="16" y="58" width="175" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="activityImageView" destination="Rc3-wL-Ycw" id="2oc-rW-Rt4"/>
+                                            <outlet property="activityLabel" destination="Y3F-l0-mE4" id="SGd-Of-5Hl"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="453"/>
+                    <connections>
+                        <outlet property="interestsCollection" destination="Hpg-jz-6W1" id="l4r-eA-nXg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U8H-tW-27H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2209" y="1473.5"/>
+        </scene>
+        <!--Place Page Collection-->
+        <scene sceneID="Fgl-zB-cwd">
+            <objects>
+                <viewController storyboardIdentifier="PlacePageCollection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7oV-Pr-X0i" customClass="PlacePageCollection" customModule="LocationSuggestion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="31w-5K-iBy"/>
+                        <viewControllerLayoutGuide type="bottom" id="NeE-Mr-8r4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="55y-Hs-wg7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="453"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AEW-7F-1AX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="453"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="0ZX-u2-Z95">
+                                    <size key="itemSize" width="207" height="138"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="placeCollectionCell" reuseIdentifier="placeCollectionCell" id="SCW-22-f5f" customClass="PlaceCollectionCell" customModule="LocationSuggestion" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="207" height="138"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grey" translatesAutoresizingMaskIntoConstraints="NO" id="8Hb-PQ-s1O">
+                                                    <rect key="frame" x="-14" y="-7" width="232" height="155"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardBack" translatesAutoresizingMaskIntoConstraints="NO" id="B2v-Q6-q3j">
+                                                    <rect key="frame" x="8" y="8" width="191" height="122"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgN-dZ-g4Q">
+                                                    <rect key="frame" x="16" y="58" width="175" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="activityImageView" destination="B2v-Q6-q3j" id="BU2-Ra-Dki"/>
+                                            <outlet property="activityLabel" destination="SgN-dZ-g4Q" id="WI4-MZ-PKH"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="453"/>
+                    <connections>
+                        <outlet property="placesCollection" destination="AEW-7F-1AX" id="sqW-1C-E4x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qbj-GY-1Ey" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2715" y="1473.5"/>
+        </scene>
         <!--Search View Controller-->
         <scene sceneID="Zp5-c5-Yu2">
             <objects>

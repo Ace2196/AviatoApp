@@ -43,9 +43,9 @@ class ProfilePageContentViewController : UIViewController, UIPageViewControllerD
         
         var index = 0
         
-        if(viewController is InterestsPage){
+        if(viewController is InterestsPageCollection){
             index = 0
-        } else if(viewController is PreviousPlaces){
+        } else if(viewController is PlacePageCollection){
             index = 1
         } else{
             return nil
@@ -68,9 +68,9 @@ class ProfilePageContentViewController : UIViewController, UIPageViewControllerD
     {
         var index = 0
         
-        if(viewController is InterestsPage){
+        if(viewController is InterestsPageCollection){
             index = 0
-        } else if(viewController is PreviousPlaces){
+        } else if(viewController is PlacePageCollection){
             index = 1
         } else{
             return nil
@@ -98,13 +98,21 @@ class ProfilePageContentViewController : UIViewController, UIPageViewControllerD
         
         currentIndex = index
         if(index == 0){
-            var mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            /*var mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
             var viewController : InterestsPage = mainStoryBoard.instantiateViewControllerWithIdentifier("InterestsPage") as InterestsPage
+            viewController.pageIndex = index
+            return viewController*/
+            var mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            var viewController : InterestsPageCollection = mainStoryBoard.instantiateViewControllerWithIdentifier("InterestCollection") as InterestsPageCollection
             viewController.pageIndex = index
             return viewController
         } else{
-            var mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            /*var mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
             var viewController : PreviousPlaces = mainStoryBoard.instantiateViewControllerWithIdentifier("PreviousPlaces") as PreviousPlaces
+            viewController.pageIndex = index
+            return viewController*/
+            var mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            var viewController : PlacePageCollection = mainStoryBoard.instantiateViewControllerWithIdentifier("PlacePageCollection") as PlacePageCollection
             viewController.pageIndex = index
             return viewController
         }
