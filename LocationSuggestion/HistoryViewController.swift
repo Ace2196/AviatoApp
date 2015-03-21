@@ -12,7 +12,7 @@ import UIKit
 
 class HistoryViewController : UIViewController{
     @IBOutlet weak var profilePhotoImageView: UIImageView!
-    @IBOutlet weak var historyLabel: UILabel!
+    @IBOutlet weak var interestLabel: UILabel!
     @IBOutlet weak var travelLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -449,9 +449,9 @@ Hit the beaches</string>
                     <tabBarItem key="tabBarItem" systemItem="history" id="tdT-QS-YAC"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="historyLabel" destination="k3S-dJ-UeQ" id="pID-As-gdg"/>
+                        <outlet property="interestLabel" destination="aYv-RQ-EYB" id="fzU-ac-4Es"/>
                         <outlet property="profilePhotoImageView" destination="jHx-Sx-0uZ" id="mCp-AY-LGj"/>
-                        <outlet property="travelLabel" destination="k3S-dJ-UeQ" id="7ve-dx-haa"/>
+                        <outlet property="travelLabel" destination="k3S-dJ-UeQ" id="Bj1-Ae-S8o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qFM-ei-BOd" userLabel="First Responder" sceneMemberID="firstResponder"/>

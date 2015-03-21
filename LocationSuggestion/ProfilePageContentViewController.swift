@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ProfilePageContentViewController : UIViewController, UIPageViewControllerDataSource {
+class ProfilePageContentViewController : UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     var pageViewController : UIPageViewController?
     //var pageTitles : Array<String> = ["THAILAND", "BARCELONA"]
     //var pageImages : Array<String> = ["THAILAND.png", "BARCELONA.png"]
@@ -21,6 +21,7 @@ class ProfilePageContentViewController : UIViewController, UIPageViewControllerD
         
         pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
         pageViewController!.dataSource = self
+        pageViewController?.delegate = self
         
         let startingViewController: UIViewController = viewControllerAtIndex(0)!
         let viewControllers: NSArray = [startingViewController]
@@ -56,6 +57,10 @@ class ProfilePageContentViewController : UIViewController, UIPageViewControllerD
         
         index--
         
+        let parent = parentViewController as HistoryViewController!
+        //parent.interestLabel.alpha = 1.0
+        //parent.travelLabel.alpha = 0.3
+        
         return viewControllerAtIndex(index)
     }
     
@@ -76,6 +81,10 @@ class ProfilePageContentViewController : UIViewController, UIPageViewControllerD
         if (index == 2) {
             return nil
         }
+        
+        let parent = parentViewController as HistoryViewController!
+        //parent.interestLabel.alpha = 0.3
+        //parent.travelLabel.alpha = 1.0
         
         return viewControllerAtIndex(index)
     }
@@ -115,6 +124,19 @@ class ProfilePageContentViewController : UIViewController, UIPageViewControllerD
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int
     {
         return 0
+    }
+    
+    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [AnyObject], transitionCompleted completed: Bool){
+        if(completed == true){
+            let parent = parentViewController as HistoryViewController!
+            if(parent.interestLabel.alpha < 0.5){
+                parent.interestLabel.alpha = 1.0
+                parent.travelLabel.alpha = 0.4
+            } else{
+                parent.interestLabel.alpha = 0.4
+                parent.travelLabel.alpha = 1.0
+            }
+        }
     }
 
 }

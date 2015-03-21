@@ -43,7 +43,7 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         var userEmail = user.objectForKey("email") as String
         println("User Email: \(userEmail)")*/
         var tokenData = FBSession.activeSession().accessTokenData
-        //println(tokenData)
+        println(tokenData)
         
         //APIIntegration.post(["token":"\(tokenData)"], url: "http://5febdf0c.ngrok.com/")
         
