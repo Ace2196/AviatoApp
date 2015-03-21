@@ -45,7 +45,7 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         var tokenData = FBSession.activeSession().accessTokenData
         println(tokenData)
         
-        //APIIntegration.post(["token":"\(tokenData)"], url: "http://5febdf0c.ngrok.com/")
+        APIIntegration.post(["token":"\(tokenData)"], url: "http://691ad711.ngrok.com")
         
         var mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
         var viewController : UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("splashScreen") as UIViewController

@@ -23,6 +23,16 @@ class ActivitiesViewController: UIViewController, UITableViewDelegate, UITableVi
                         "Chow down fresh seafood",
                         "Hit the beaches"]
     
+    var sources = ["(Source: Active Network)",
+        "(Source: FourSquare)",
+        "(Source: JamBase)",
+        "(Source: Facebook)",
+        "(Source: TripAdvisor)",
+        "(Source: Active Network)",
+        "(Source: TripAdvisor)",
+        "(Source: FourSquare)",
+        "(Source: TripAdvisor)"]
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
     }
@@ -53,6 +63,7 @@ class ActivitiesViewController: UIViewController, UITableViewDelegate, UITableVi
         var cell = tableView.dequeueReusableCellWithIdentifier("activityCell", forIndexPath: indexPath) as ActivityTableViewCell
         cell.addShadows()
         cell.activityLabel.text = activities[indexPath.row]
+        cell.souceLabel.text = sources[indexPath.row]
         cell.activityImageView.image = UIImage(named: "activities_\(indexPath.row)")
         return cell
     }

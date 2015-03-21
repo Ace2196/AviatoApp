@@ -14,6 +14,7 @@ class ActivityTableViewCell : UITableViewCell {
     @IBOutlet weak var cardBackImageView: UIImageView!
     @IBOutlet weak var activityImageView: UIImageView!
     @IBOutlet weak var activityLabel: UILabel!
+    @IBOutlet weak var souceLabel: UILabel!
     
     func addShadows(){
         cardBackImageView.layer.shadowColor = UIColor.blackColor().CGColor
