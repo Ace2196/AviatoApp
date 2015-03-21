@@ -11,9 +11,17 @@ import Foundation
 import UIKit
 
 class HistoryViewController : UIViewController{
+    @IBOutlet weak var profilePhotoImageView: UIImageView!
+    @IBOutlet weak var historyLabel: UILabel!
+    @IBOutlet weak var travelLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         setNeedsStatusBarAppearanceUpdate()
+        profilePhotoImageView.layer.shadowColor = UIColor.blackColor().CGColor
+        profilePhotoImageView.layer.shadowOffset = CGSizeMake(1, 2);
+        profilePhotoImageView.layer.shadowOpacity = 0.4;
+        profilePhotoImageView.layer.shadowRadius = 1.0;
+        profilePhotoImageView.clipsToBounds = false;
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
